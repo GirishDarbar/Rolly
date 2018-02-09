@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="User_Contact::job_head" title="All Contact" module="User_Contact" sortOrder="100" resource="User_Contact::job_head" />
+        <!-- This Is Porsen Are The sem Definde in routes.xml id and action first part are sem action="contact/department" -->
+        <add id="User_Contact::department" title="Contact" module="User_Contact" sortOrder="10" parent="User_Contact::job_head" action="contact/department" resource="User_Contact::job" />
+    </menu>
+</config>
